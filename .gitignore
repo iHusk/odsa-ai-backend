@@ -1,0 +1,14 @@
+.mcp.json
+.env
+.venv/
+__pycache__/
+*.pyc
+chroma_db/
+cache/
+logs/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.DS_Store
+my_work/
