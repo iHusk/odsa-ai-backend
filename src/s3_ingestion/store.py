@@ -16,6 +16,8 @@ Usage:
     print(hits["documents"])
 """
 
+from pathlib import Path
+
 import chromadb
 from dotenv import load_dotenv
 
@@ -24,7 +26,10 @@ from src.s3_ingestion.chunker import Chunk
 
 load_dotenv()
 
-CHROMA_PATH = "./chroma_db"
+# Resolve relative to repo root (two levels up from this file's location)
+# so ChromaDB always writes to the same place regardless of notebook CWD
+_REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+CHROMA_PATH = str(_REPO_ROOT / "chroma_db")
 COLLECTION_NAME = "northbrook"
 
 
