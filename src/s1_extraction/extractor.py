@@ -13,21 +13,19 @@ Usage:
     results = extract_batch(["docs/memo1.txt", "docs/memo2.txt"], MemoExtraction)
 """
 
-import json
-import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from pydantic import BaseModel, ValidationError
-
-from src.s0_generation.generate import call_claude
+import anthropic
+from pydantic import BaseModel
 
 
 SYSTEM_PROMPT = (
     "You are a document extraction assistant. "
-    "Return ONLY valid JSON matching the provided schema. "
-    "No markdown, no explanation, just JSON."
+    "Extract structured data from the provided document accurately and completely."
 )
+
+client = anthropic.Anthropic()
 
 
 @dataclass
@@ -40,29 +38,14 @@ class ExtractionResult:
     error: str | None = None
 
 
-def _strip_markdown_json(text: str) -> str:
-    """Remove markdown code fences (```json ... ```) if present.
-
-    Args:
-        text: Raw response text from Claude.
-
-    Returns:
-        The JSON string with any surrounding markdown fences removed.
-    """
-    stripped = text.strip()
-    match = re.match(r"^```(?:json)?\s*\n?(.*?)\n?\s*```$", stripped, re.DOTALL)
-    if match:
-        return match.group(1).strip()
-    return stripped
-
-
 def extract_single(
     document_text: str, schema_class: type[BaseModel]
 ) -> BaseModel:
     """Extract structured data from a single document using Claude.
 
-    Sends the document text and the target JSON schema to Claude,
-    then validates the response against the Pydantic model.
+    Uses Claude's native structured output (output_format) to guarantee
+    valid JSON matching the schema via constrained decoding. No manual
+    JSON parsing or markdown stripping needed.
 
     Args:
         document_text: The raw text content to extract from.
@@ -70,28 +53,21 @@ def extract_single(
 
     Returns:
         A validated instance of schema_class populated with extracted data.
-
-    Raises:
-        ValidationError: If Claude's response does not match the schema.
-        json.JSONDecodeError: If Claude's response is not valid JSON.
     """
-    schema_json = json.dumps(schema_class.model_json_schema(), indent=2)
-
-    user_prompt = (
-        f"Extract data from the following document into this JSON schema:\n\n"
-        f"--- SCHEMA ---\n{schema_json}\n\n"
-        f"--- DOCUMENT ---\n{document_text}"
-    )
-
-    response_text = call_claude(
-        prompt=user_prompt,
-        system_prompt=SYSTEM_PROMPT,
+    response = client.messages.parse(
+        model="claude-sonnet-4-5",
+        max_tokens=1024,
         temperature=0.0,
+        system=SYSTEM_PROMPT,
+        messages=[
+            {
+                "role": "user",
+                "content": f"Extract structured data from this document:\n\n{document_text}",
+            }
+        ],
+        output_format=schema_class,
     )
-
-    cleaned = _strip_markdown_json(response_text)
-    parsed = json.loads(cleaned)
-    return schema_class.model_validate(parsed)
+    return response.parsed_output
 
 
 def extract_batch(
