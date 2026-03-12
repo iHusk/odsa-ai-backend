@@ -1,0 +1,162 @@
+[
+  {
+    "ticket_id": "NB-001",
+    "submitted_by": "Jordan Reeves",
+    "department": "Engineering",
+    "submitted_at": "2025-01-25T08:15:00",
+    "subject": "VPN connection failing since Friday's security update",
+    "body": "Hey IT — ever since Friday's Cloudflare Zero Trust update my VPN drops every 10-15 minutes. I've tried restarting the client, clearing the cache, even rebooting my laptop. I'm fully remote this week and basically can't push code. This is blocking the entire sprint."
+  },
+  {
+    "ticket_id": "NB-002",
+    "submitted_by": "Priya Chandrasekaran",
+    "department": "Marketing",
+    "submitted_at": "2025-01-25T08:42:00",
+    "subject": "URGENT: Floor 3 coffee machine completely dead",
+    "body": "This is not a drill. The Breville on floor 3 is producing nothing but sad gurgling sounds and a faint smell of burning. Floor 3 has 40+ people and we have client presentations all week. I cannot overstate the severity of this situation. PLEASE send someone immediately."
+  },
+  {
+    "ticket_id": "NB-003",
+    "submitted_by": "Marcus Webb",
+    "department": "Finance",
+    "submitted_at": "2025-01-25T09:10:00",
+    "subject": "Expense report #4782 rejected without explanation",
+    "body": "My expense report for the Chicago client trip was rejected but I didn't receive any reason. The hotel was $195/night which is under the $200 standard limit. All receipts were attached and submitted within the 30-day window. I need this resolved before month-end close. Can someone from Finance review?"
+  },
+  {
+    "ticket_id": "NB-004",
+    "submitted_by": "Tyler Kim",
+    "department": "Engineering",
+    "submitted_at": "2025-01-25T09:33:00",
+    "subject": "I think I accidentally deleted the shared engineering drive folder",
+    "body": "OK please don't panic but I think I may have accidentally deleted the /eng/shared/sprint-artifacts folder. I was trying to clean up my own directory and I think I ran the wrong rm command. I noticed it about 10 minutes ago. I am so so sorry. Is there a backup? Please tell me there's a backup. I haven't told my manager yet."
+  },
+  {
+    "ticket_id": "NB-005",
+    "submitted_by": "Catherine Park",
+    "department": "Executive",
+    "submitted_at": "2025-01-25T10:05:00",
+    "subject": "Need access to Project Meridian dashboard ASAP",
+    "body": "I'm prepping materials for the board meeting on Monday and I need access to the Project Meridian analytics dashboard. Sarah mentioned the $2.1 million investment figures should be visible there along with the leverage ratios. I've tried logging in but get a 403 Forbidden error. This is time-sensitive — the CEO needs these numbers."
+  },
+  {
+    "ticket_id": "NB-006",
+    "submitted_by": "Derek Okafor",
+    "department": "Engineering",
+    "submitted_at": "2025-01-25T10:28:00",
+    "subject": "Dev environment broken after Python 3.12 update",
+    "body": "Updated to Python 3.12 this morning and now half my dependencies won't install. Getting compilation errors with numpy and some Cython packages. Tried creating a fresh venv but same issue. I think it's an Apple Silicon compatibility thing? Need help getting back to a working state — I have a demo on Tuesday."
+  },
+  {
+    "ticket_id": "NB-007",
+    "submitted_by": "Amara Johnson",
+    "department": "Legal",
+    "submitted_at": "2025-01-25T11:15:00",
+    "subject": "Badge not working at new building",
+    "body": "Moved to the new office at 250 Innovation Drive this week per the relocation memo. My badge doesn't open any doors — not the main entrance, not the focus rooms, nothing. I've been tailgating other employees to get in which I know is a security issue. Can my badge be reprogrammed for the new building?"
+  },
+  {
+    "ticket_id": "NB-008",
+    "submitted_by": "Ronald Pettigrew",
+    "department": "Operations",
+    "submitted_at": "2025-01-25T11:52:00",
+    "subject": "Floor 2 printer — this is my THIRD ticket",
+    "body": "I submitted tickets about the floor 2 printer on January 10th and January 18th. It is STILL jamming on every other print job. I have now wasted approximately 4 hours of my life feeding crumpled paper out of this machine. If we're spending money on 60 focus rooms at the new building, surely we can afford a printer that works. Please escalate."
+  },
+  {
+    "ticket_id": "NB-009",
+    "submitted_by": "Lisa Chen",
+    "department": "HR",
+    "submitted_at": "2025-01-25T12:30:00",
+    "subject": "Remote work equipment stipend question",
+    "body": "Hi! I was approved for fully remote work starting February 1st. The remote work policy mentions a $1,500 one-time equipment stipend and a $300 annual refresh. Two questions: (1) How do I submit the stipend request? Is there a form? (2) Does the $300 refresh start this January or next January since I'm just starting remote? Thanks!"
+  },
+  {
+    "ticket_id": "NB-010",
+    "submitted_by": "James Nakamura",
+    "department": "Research",
+    "submitted_at": "2025-01-25T13:15:00",
+    "subject": "Suspicious email from 'IT Department' asking for credentials",
+    "body": "Got an email this morning from it-support@northbrook-partners.net (note: our real domain is northbrookpartners.com) asking me to 'verify my credentials' by clicking a link and entering my password due to 'the recent security migration.' The email has our logo but the formatting looks off. I did NOT click the link. Reporting this in case others received it too."
+  },
+  {
+    "ticket_id": "NB-011",
+    "submitted_by": "Diana Kowalski",
+    "department": "Sales",
+    "submitted_at": "2025-01-25T14:00:00",
+    "subject": "Focus rooms at new office are FREEZING",
+    "body": "I've been using focus room 12B at the new Innovation Drive location and it's genuinely cold enough that I can see my breath. OK maybe not quite but it's really uncomfortable. I've talked to a few other people on the floor and rooms 12A through 12D all seem to have the same issue. Might be a zone thermostat problem? Hard to focus in the focus rooms when you're shivering."
+  },
+  {
+    "ticket_id": "NB-012",
+    "submitted_by": "Ahmed Hassan",
+    "department": "Engineering",
+    "submitted_at": "2025-01-25T14:45:00",
+    "subject": "Network completely down in east wing, 3rd floor",
+    "body": "Entire east wing of floor 3 at the new building has lost network. Both WiFi and ethernet are dead. This is affecting about 15 engineers. We've been down for 20 minutes already. Multiple people have critical deployments scheduled today. Someone from the standup mentioned the network closet in the east wing was being worked on for the relocation — maybe something got disconnected?"
+  },
+  {
+    "ticket_id": "NB-013",
+    "submitted_by": "Vanessa Torres",
+    "department": "Finance",
+    "submitted_at": "2025-01-25T15:20:00",
+    "subject": "Unauthorized login attempt on my account",
+    "body": "I just got an alert from our security system showing a login attempt on my account from an IP address in Romania at 3:14 AM last night. I was obviously asleep. I've already changed my password but I'm concerned because I have access to the Q4 financial reports and sensitive budget data. Should I be worried? What else should I do?"
+  },
+  {
+    "ticket_id": "NB-014",
+    "submitted_by": "Robert Chen",
+    "department": "Research",
+    "submitted_at": "2025-01-25T15:50:00",
+    "subject": "Request to increase ML team cloud compute budget",
+    "body": "The ML team's cloud compute allocation for Q1 is $8,000/month. With the new Project Meridian workloads we're running 3x more training jobs than projected. We burned through January's budget by the 20th. Requesting an increase to $15,000/month for Q1, with a review in April. I have usage reports to justify this — happy to set up a meeting with whoever approves these."
+  },
+  {
+    "ticket_id": "NB-015",
+    "submitted_by": "Karen Mitchell",
+    "department": "Marketing",
+    "submitted_at": "2025-01-26T08:05:00",
+    "subject": "something is broken",
+    "body": "Hi, something on my computer isn't working right. It was fine on Friday but now it's doing the thing again. Can someone come look at it? I'm at desk 4B on the 2nd floor. Thanks."
+  },
+  {
+    "ticket_id": "NB-016",
+    "submitted_by": "IT Support",
+    "department": "IT",
+    "submitted_at": "2025-01-26T08:30:00",
+    "subject": "Mandatory Security Verification Required - Action Needed",
+    "body": "Dear Employee, Due to our recent security infrastructure upgrade, all employees must re-verify their accounts. Please click here to verify: [LINK REMOVED] You will need to enter your current username, password, and security questions. This must be completed within 24 hours to maintain system access. Thank you, IT Support Team, Northbrook Partners"
+  },
+  {
+    "ticket_id": "NB-017",
+    "submitted_by": "Samantha Brooks",
+    "department": "HR",
+    "submitted_at": "2025-01-26T09:15:00",
+    "subject": "Cannot access benefits enrollment portal",
+    "body": "The new benefits enrollment portal at benefits.northbrookpartners.com keeps giving me a 'Session Expired' error immediately after login. I've tried Chrome, Firefox, and Edge. Cleared cookies and cache. Same result every time. Open enrollment closes February 7th and I still need to update my dental plan selection. Getting a little anxious about the deadline."
+  },
+  {
+    "ticket_id": "NB-018",
+    "submitted_by": "Michael Osei",
+    "department": "Operations",
+    "submitted_at": "2025-01-26T10:00:00",
+    "subject": "Laptop acting strange + got a weird email",
+    "body": "Two things: (1) My laptop has been running super slow since Thursday, fans spinning constantly even with nothing open. Task manager shows something called 'svchost_helper.exe' using 80% CPU which I definitely didn't install. (2) Separately, I got an email on Wednesday from an external address with a zip file attachment labeled 'Q4_bonus_structure.zip' — I may have opened it. Could these be related? Kind of freaking out."
+  },
+  {
+    "ticket_id": "NB-019",
+    "submitted_by": "Angela Reeves",
+    "department": "Sales",
+    "submitted_at": "2025-01-26T10:45:00",
+    "subject": "Construction noise next to focus rooms is unbearable",
+    "body": "I understand the new office is still being finished but the construction happening adjacent to the 2nd floor focus rooms makes them completely unusable. I had three client calls on Friday and had to apologize for the jackhammering in the background on every single one. Can we get a timeline on when this work will be done? Or at minimum some temporary quiet space for calls?"
+  },
+  {
+    "ticket_id": "NB-020",
+    "submitted_by": "David Park",
+    "department": "Engineering",
+    "submitted_at": "2025-01-26T11:30:00",
+    "subject": "Calendar invites not syncing after Outlook migration",
+    "body": "Since the Outlook migration on Thursday, my calendar is a mess. Meetings from my old calendar didn't transfer — I've missed two standups already because they just aren't showing up. I can see them on the web version of Outlook but they don't sync to the desktop app or my phone. Other engineers in the standup mentioned the same issue."
+  }
+]
