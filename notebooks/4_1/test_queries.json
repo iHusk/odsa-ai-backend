@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What is the current vacation carryover limit?",
+    "expected_source": "vacation_policy_2025.md",
+    "expected_doc_type": "policy",
+    "category": "targeted"
+  },
+  {
+    "query": "What were the Q3 2024 revenue figures?",
+    "expected_source": "financial_report_q3_2024.md",
+    "expected_doc_type": "financial",
+    "category": "targeted"
+  },
+  {
+    "query": "What is the remote work policy?",
+    "expected_source": "remote_work_policy.md",
+    "expected_doc_type": "policy",
+    "category": "targeted"
+  },
+  {
+    "query": "What security changes were recently announced?",
+    "expected_source": "memo_security_update.md",
+    "expected_doc_type": "memo",
+    "category": "targeted"
+  },
+  {
+    "query": "How do I submit an expense report?",
+    "expected_source": "expense_policy.md",
+    "expected_doc_type": "policy",
+    "category": "targeted"
+  },
+  {
+    "query": "What were the Q4 board meeting decisions?",
+    "expected_source": "board_meeting_q4_2024.md",
+    "expected_doc_type": "meeting",
+    "category": "targeted"
+  },
+  {
+    "query": "What is the status of the engineering hiring plan?",
+    "expected_source": "engineering_standup_2025_01.md",
+    "expected_doc_type": "meeting",
+    "category": "targeted"
+  },
+  {
+    "query": "What decisions were made about the office relocation?",
+    "expected_source": "board_meeting_q3_2024.md",
+    "expected_doc_type": "memo",
+    "category": "cross-cutting"
+  },
+  {
+    "query": "What is the budget for the new AI initiative?",
+    "expected_source": "board_meeting_q4_2024.md",
+    "expected_doc_type": "memo",
+    "category": "cross-cutting"
+  },
+  {
+    "query": "What corrections were made to the PTO policy?",
+    "expected_source": "memo_policy_correction.md",
+    "expected_doc_type": "policy",
+    "category": "cross-cutting"
+  }
+]
