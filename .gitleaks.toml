@@ -1,0 +1,5 @@
+# Secrets guardrail. Run: just check-secrets
+title = "gitleaks config"
+
+[extend]
+useDefault = true

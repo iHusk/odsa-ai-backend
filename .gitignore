@@ -12,3 +12,8 @@ dist/
 build/
 .DS_Store
 my_work/
+
+# Secrets: ignore every .env variant except the committed templates
+.env.*
+!.env.tpl
+!.env.example

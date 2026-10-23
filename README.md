@@ -88,3 +88,14 @@ odsa-ai-backend/
 - Re-run `notebooks/session_0_1_setup.ipynb` to diagnose environment issues
 - Check the troubleshooting table above
 - Ask in class or during office hours
+
+## Secrets
+
+1Password (account `tkhllc`) is the source of truth. This repo reads the `homelab-ai` and `homelab-apps` vaults via `op://` references in `.env.tpl`.
+Convention: homelab-main `docs/security/secrets-management-1password.md`.
+
+- Local dev: `op inject -i .env.tpl -o .env` (`.env` is gitignored; never commit it).
+- One-offs: `op run --env-file .env.tpl -- <cmd>`.
+- Never hand-write a secret value into `.env`, code, docs or chat. Create the 1Password item first, then reference it in `.env.tpl`.
+- On homelab hosts the `op-render` manifest owns the rendered file.
+- Before committing: `just check-secrets` (gitleaks).
